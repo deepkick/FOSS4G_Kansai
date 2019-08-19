@@ -13,10 +13,10 @@ conda list the available enviornment
 $ conda info -e
 
 Create a virtual environment for your project
-$ conda create -n GISIDEA_AI python=3.6.0 anaconda
+$ conda create -n Geospatial_AI python=3.6.0 anaconda
 
 Activate your virtual environment.
-$ conda activate GISIDEA_AI
+$ conda activate Geospatial_AI
 -----------------------------------------------------------
 Install additional Python packages to a virtual environment
 -----------------------------------------------------------
@@ -27,5 +27,5 @@ conda install pytorch -c pytorch
 pip install torchvision
 
 remove the eviornment if you dont need it  further
-$ source deactivate GISIDEA_AI
-$conda env remove -n GISIDEA_AI
+$ source deactivate Geospatial_AI
+$conda env remove -n Geospatial_AI
