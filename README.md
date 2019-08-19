@@ -1,1 +1,1 @@
-# GISIDEA_workshop
+# FOSS4G Kansai Workshop
