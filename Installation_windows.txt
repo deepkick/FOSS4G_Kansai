@@ -1,7 +1,12 @@
 ﻿Installation prior to start the workshop
 All the libraries  will be installed on a “conda” virtual enviourmnent
 
-Install anaconda from https://anaconda.org/
+Install anaconda
+Download anaconda for Windows form the website
+Windows = https://www.anaconda.com/download/#windows
+install using gui
+
+All the libraries  will be installed on a "conda" virtual environment
 
 Open the anaconda prompt.
 $ conda -V
@@ -13,7 +18,7 @@ conda list the available enviornment
 $ conda info -e
 
 Create a virtual environment for your project
-$ conda create -n Geospatial_AI python=3.6.0 anaconda
+$ conda create -n Geospatial_AI python=3.7.4 anaconda
 
 Activate your virtual environment.
 $ conda activate Geospatial_AI
@@ -27,5 +32,5 @@ conda install pytorch -c pytorch
 pip install torchvision
 
 remove the eviornment if you dont need it  further
-$ source deactivate Geospatial_AI
-$conda env remove -n Geospatial_AI
+$ conda deactivate
+$ conda env remove -n Geospatial_AI

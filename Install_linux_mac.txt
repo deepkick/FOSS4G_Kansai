@@ -4,13 +4,13 @@ Installation prior to start the workshop
 Download anaconda for Linix and mac  form the website
 Linux = https://www.anaconda.com/download/#linux
 install anaconda3
-$ bash ~/Downloads/Anaconda3-5.3.0-Linux-x86_64.sh
+$ bash ~/Downloads/Anaconda3-2019.07-Linux-x86_64.sh
 $ source ~/.bashrc
 
 Mac = https://anaconda.com/download/#macos
 install using gui
 
-All the libraries  will be installed on a ‚Äúconda‚Äù virtual environment
+All the libraries  will be installed on a "conda"Äù virtual environment
 
 Open a terminal client.
 
@@ -20,10 +20,10 @@ $ conda search "^python$"
 conda list the available environment
 $ conda info -e
 Create a virtual environment for your project
-$ conda create -n Geospatial_AI python=3.6.0 anaconda
+$ conda create -n Geospatial_AI python=3.7.4 anaconda
 
 Activate your virtual environment.
-$ source activate Geospatial_AI
+$ conda activate Geospatial_AI
 -----------------------------------------------------------
 Install additional Python packages to a virtual environment
 -----------------------------------------------------------
@@ -34,5 +34,5 @@ conda install pytorch torchvision -c pytorch
 pip install jupyter
 
 remove the eviornment if you dont need it  further
-$ source deactivate Geospatial_AI
-$conda env remove -n Geospatial_AI
+$ conda deactivate
+$ conda env remove -n Geospatial_AI
