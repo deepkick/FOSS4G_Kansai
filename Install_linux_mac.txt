@@ -10,7 +10,7 @@ $ source ~/.bashrc
 Mac = https://anaconda.com/download/#macos
 install using gui
 
-All the libraries  will be installed on a "conda"Äù virtual environment
+All the libraries  will be installed on a "conda" virtual environment
 
 Open a terminal client.
 
