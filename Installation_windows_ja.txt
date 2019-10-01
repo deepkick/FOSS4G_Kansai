@@ -1,0 +1,49 @@
+﻿ワークショップ開始の事前インストール
+
+anaconda3のインストール
+すでに anaconda3 を利用されている方は、ダウンロードとインストールは必要ありません。
+anaconda for Windows をwebサイトからダウンロードします。
+
+Windows = https://www.anaconda.com/download/#windows
+Python 3.7 version を使用します。
+GUIでインストールを行います。
+
+全てのライブラリは "conda" 仮想環境の下にインストールされます。
+
+anaconda コマンドプロンプトを開きます.
+
+$ conda -V
+
+現在のconda環境のpythonのバージョンを確認します。
+
+$ conda search "^python$"
+
+現在利用可能なconda環境のリストを確認します。
+
+$ conda info -e
+
+このワークショップのための仮想環境を作ります。
+
+$ conda create -n Geospatial_AI python=3.7.4 anaconda
+
+作成した仮想環境を有効にします。
+
+$ conda activate Geospatial_AI
+
+-----------------------------------------------------------
+追加のPythonパッケージを仮想環境にインストールする
+-----------------------------------------------------------
+$ pip install --upgrade tensorflow
+$ pip install  keras
+$ conda install pytorch -c pytorch
+
+$ pip install torchvision
+jup
+
+Geospatial_AI 仮想環境を無効にする方法は次の通りです。
+
+$ conda deactivate
+
+将来使わないので仮想環境をアンインストールするのであれば方法は次の通りです。
+
+$ conda env remove -n Geospatial_AI
